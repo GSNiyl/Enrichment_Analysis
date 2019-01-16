@@ -8,7 +8,7 @@ KEGG/GO Analysis for hsa with R Code
 ###### (1)单样本输入文件
 
 样本名字 |基因名字
-------|------|------
+:-------|:------
 SampleName | GeneName
 PP_PN | PLEKHB1
 PP_PN | NELL2
@@ -17,7 +17,7 @@ PP_PN | LEF1
 PP_PN | LRRK1
 PP_PN | ZNF683
 
-######(2)多样本输入文件
+######  (2)多样本输入文件
 
 样本名字 |基因名字
 :-------|:------
@@ -34,9 +34,9 @@ F17092477271-KY409 | CYP2D6
 F17092477271-KY409 | DUSP2
 F17092477271-KY409 | NF2
 
-####第二步：代码参数说明
+##### 第二步: 代码参数说明
 
-#####2.1`plot_go_kegg_plot_2.R` 参数说明
+######  2.1`plot_go_kegg_plot_2.R` 参数说明
 ```text
 1. inputName: 输入文件（'\t'分隔的文件）
 2. outdir: 输出目录
@@ -46,7 +46,7 @@ F17092477271-KY409 | NF2
 6. height：突变的高度
 ```
 
-#####2.2 `plot_go_kegg_plot_2.R` 参数说明
+###### 2.2 `plot_go_kegg_plot_2.R` 参数说明
 
 ```text
 如果需要对*.no.filter文件进行重新筛选显著性通路与作图
@@ -62,7 +62,7 @@ F17092477271-KY409 | NF2
 
 `注意：如果需要重新筛选显著性通路并绘图，才需用脚本plot_go_kegg_plot_2.R`
 
-####第三步：运行脚本
+##### 第三步：运行脚本
 
 ```shell
 plot_go_kegg_enrich_plot.R inputName inputName 1 0.05 10 30
