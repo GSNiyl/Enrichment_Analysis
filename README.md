@@ -65,7 +65,7 @@ F17092477271-KY409 | NF2
 ##### 第三步：运行脚本
 
 ```shell
-plot_go_kegg_enrich_plot.R inputName inputName 1 0.05 10 30
+plot_go_kegg_enrich_plot.R inputName outdir 1 0.05 10 30
 ```
 
 ```shell
