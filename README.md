@@ -1,9 +1,11 @@
-#KEGG GO enrichment
+## 流程介绍  
+
+##KEGG/GO Enrichment
 KEGG GO R script for hsa
 
 ###第一步:准备文件
 
-####单样本输入文件
+####(1)单样本输入文件
 
 样本名字 |基因名字
 ------|------|------
@@ -15,10 +17,10 @@ PP_PN | LEF1
 PP_PN | LRRK1
 PP_PN | ZNF683
 
-#####多样本输入文件
+####(2)多样本输入文件
 
 样本名字 |基因名字
-------|------|------
+:-------|:------
 SampleName | GeneName
 F17092477270-KY409 | CREBBP
 F17092477270-KY409 | CYP2D6
@@ -34,7 +36,7 @@ F17092477271-KY409 | NF2
 
 ###第二步：代码参数说明
 
-####2.1`plot_go_kegg_plot_2.R`代码参数说明
+####2.1`plot_go_kegg_plot_2.R` 参数说明
 ```text
 1. inputName: 输入文件（'\t'分隔的文件）
 2. outdir: 输出目录
@@ -44,11 +46,11 @@ F17092477271-KY409 | NF2
 6. height：突变的高度
 ```
 
-####2.2 `plot_go_kegg_plot_2.R`参数说明
+####2.2 `plot_go_kegg_plot_2.R` 参数说明
 
 ```text
 如果需要对*.no.filter文件进行重新筛选显著性通路与作图
-1. prefix: *go_*.no.filter.xlsx雨*pathway.no.filter.xlsx文件的前缀
+1. prefix: *go_*.no.filter.xlsx与*pathway.no.filter.xlsx文件的前缀
 2. pmodule: 1 为p.ajust作为筛选条件 0为pvalue为筛选条件
 3. pvalue：p值小于0.05为筛选条件，筛选显著性通路（默认是0.05）
 4. width：图片的宽度
