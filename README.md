@@ -1,6 +1,6 @@
 ## 流程介绍  
 
-##KEGG/GO Enrichment
+###KEGG/GO Enrichment
 KEGG GO R script for hsa
 
 ###第一步:准备文件
